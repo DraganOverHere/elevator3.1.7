@@ -41,7 +41,7 @@ task main()
 	}
 }
 
-void MoveToFloor(int floorNum)
+void MoveToFloor(int floorNum)								
 {
 	turnLedsOff();								// turn all LEDS off
 
@@ -56,7 +56,7 @@ void MoveToFloor(int floorNum)
 
 	turnOnLed(floorNum);							// turn on LED based on floor number
 
-	ClearTimer(T1);								// reset timer since elevator moved
+	ClearTimer(T1);								// reset timer when elevator is moved 
 }
 
 /* turnLedsOff function turn all LEDS off */
